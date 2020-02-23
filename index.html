@@ -12,16 +12,30 @@
 		<a href="about_me.html">about me</a>
 	</nav>
 
-	<h1>Hi! I am shin.kj</h1>
+	<h1>Hello~ I am shin kyeongju</h1>
 	<p>Thank you. visit my homepage</p>
-	<p>Python & Django develop</p>
+	<p>Python & Django developement</p>
 
-	<a href="about_me.html">about me</a>
+	<h3 id="hello_to_somebody"></h3>
+
+	<input type="text" name="name" id="user_name" onkeyup="doSomething()">
+	<button type="button" onclick="alert('abc')">Say Hellow</button>
+
+	<a href="about_me.html">About me</a>
 
 	<hr/>
 
 	<img src=https://cdn.pixabay.com/photo/2020/02/16/20/29/new-york-4854718_1280.jpg>
-
 	<img src=https://cdn.pixabay.com/photo/2014/02/17/10/20/statue-of-liberty-267948_1280.jpg>
+
+
+	<script type="text/javascript" src="hello.js"></script>
+	<!-- <script> -->
+		function doSomething(){
+			var name = document.getElementById("user_name").value;
+			
+			document.getElementById("hello_to_somebody").innerHTML="안녕하세요. " + name + "님!"
+		}
+	<!-- </script> -->
 </body>
 </html>
